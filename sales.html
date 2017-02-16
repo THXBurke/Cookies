@@ -1,23 +1,38 @@
 <!DOCTYPE <html>
 <html>
   <head>
-    <title>Spirulina Treat Sales</title>
+    <title>Spirulina Treats Sales</title>
   <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
-      <h1>Spirulina Treat Sales Tracker</h1>
+      <h1>Spirulina Treats Sales Tracker</h1>
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sales.html">Run Sales Tracker Again</a></li>
-          </ul>
+            <ul><a href="index.html">Home</a></ul>
+            <ul><a href="sales.html">Run Sales Tracker Again</a></ul>
         </nav>
     </header>
-    <p>This is a sales tracker that shows how many Spirulina Treats we are selling at each of our Seattle locations.</p>
-    <table id="salesTracker">
+      <p>This is a sales tracker that shows how many Spirulina Treats we are selling at each of our popular Seattle locations.</p>
 
-    </table>
+    <form id ="salesInput">
+      <fieldset>
+        <legend>Store Sales Input</legend>
+        <label id="nameInput">Name:
+        <input type="text" name="name"></label>
+        <label>Minimum Customers:
+        <input type="text" name="minCustomers"></label>
+        <label>Maximum Customers:
+        <input tye="text" name="maxCustomers"></label>
+        <label>Average Sale:
+        <input type="text" name="avgTreats"></label>
+        <button id="submit">Submit</button>
+      </fieldset> </br>
+
+      <section class="allTheData">
+        <table id="salesTable">
+        </table>
+      </section>
+    </form>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
