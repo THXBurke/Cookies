@@ -136,6 +136,6 @@ var avgTreats = parseInt(event.target.avgTreats.value);
 makeHeaderRow();
 renderAllStores();
 makeFooterRow();
-
+}
 
 // salesInput.addEventListener('submit', dataInput);
